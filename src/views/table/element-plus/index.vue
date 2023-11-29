@@ -175,6 +175,11 @@ watch([() => paginationData.currentPage, () => paginationData.pageSize], getTabl
             </template>
           </el-table-column>
           <el-table-column prop="createTime" label="创建时间" align="center" />
+          <el-table-column prop="imageUrl" label="创建时间" align="center">
+            <template #default="scope">
+              <el-image style="width: 50px; height: 50px" :src="scope.row.imageUrl" fit="cover" />
+            </template>
+          </el-table-column>
           <el-table-column fixed="right" label="操作" width="150" align="center">
             <template #default="scope">
               <el-button type="primary" text bg size="small" @click="handleUpdate(scope.row)">修改</el-button>
