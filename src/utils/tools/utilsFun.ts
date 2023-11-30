@@ -206,6 +206,16 @@ class utilsFun {
   printFile = async (url: string) => {
     printJS(url)
   }
+
+  /**
+   * 生成随机文件名
+   */
+  createRandomFileName() {
+    let str = ""
+    str = Math.random().toString(36).substr(3)
+    str += Date.now().toString(16).substr(4)
+    return str
+  }
 }
 
 export default new utilsFun()

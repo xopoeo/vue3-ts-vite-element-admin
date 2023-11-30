@@ -267,6 +267,14 @@ export const constantRoutes: RouteRecordRaw[] = [
         meta: {
           title: "dictionary"
         }
+      },
+      {
+        path: "uploadImage",
+        component: () => import("@/views/components-demo/upload.vue"),
+        name: "UploadImage",
+        meta: {
+          title: "UploadImage"
+        }
       }
     ]
   }

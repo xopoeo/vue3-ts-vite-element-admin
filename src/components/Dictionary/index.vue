@@ -79,8 +79,10 @@ onBeforeMount(async () => {
 
 <style scoped></style>
 
+<!-- 使用 -->
+/** import UploadComponent from "@/components/Upload/index.vue"
 <!-- 本地获取 -->
-<!--<Dictionary v-model="value" v-model:options-value="optionsValue" key-code="sys-company" />-->
+<dictionary-component v-model="value" v-model:options-value="optionsValue" key-code="sys-company" />
 
 <!-- 接口获取 -->
-<!--<Dictionary v-model="value" v-model:options-value="optionsValue" dictId="1" :is-api="true" />-->
+<dictionary-component v-model="value" v-model:options-value="optionsValue" dictId="1" :is-api="true" />
