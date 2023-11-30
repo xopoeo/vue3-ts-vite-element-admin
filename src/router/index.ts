@@ -247,6 +247,28 @@ export const constantRoutes: RouteRecordRaw[] = [
         }
       }
     ]
+  },
+  {
+    path: "/components-demo",
+    component: Layouts,
+    redirect: "/components-demo/dictionary",
+    name: "ComponentsDemo",
+    meta: {
+      title: "组件 示例",
+      // elIcon: "Grid",
+      svgIcon: "component",
+      alwaysShow: true
+    },
+    children: [
+      {
+        path: "dictionary",
+        component: () => import("@/views/components-demo/dictionary.vue"),
+        name: "Dictionary",
+        meta: {
+          title: "dictionary"
+        }
+      }
+    ]
   }
 ]
 

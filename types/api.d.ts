@@ -4,3 +4,14 @@ interface ApiResponseData<T> {
   data: T
   message: string
 }
+
+/** 分页数据的data类型 */
+interface PageTableData<T> {
+  currentPage: number
+  isMore?: any
+  items: T
+  pageSize: number
+  startIndex?: any
+  totalNum: number
+  totalPage: number
+}
