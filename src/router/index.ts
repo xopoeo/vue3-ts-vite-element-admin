@@ -283,6 +283,14 @@ export const constantRoutes: RouteRecordRaw[] = [
         meta: {
           title: "cropper"
         }
+      },
+      {
+        path: "print",
+        component: () => import("@/views/components-demo/print.vue"),
+        name: "Print",
+        meta: {
+          title: "print"
+        }
       }
     ]
   }
