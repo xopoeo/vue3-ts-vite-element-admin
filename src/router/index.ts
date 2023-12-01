@@ -275,6 +275,14 @@ export const constantRoutes: RouteRecordRaw[] = [
         meta: {
           title: "UploadImage"
         }
+      },
+      {
+        path: "cropper",
+        component: () => import("@/views/components-demo/cropper.vue"),
+        name: "Cropper",
+        meta: {
+          title: "cropper"
+        }
       }
     ]
   }

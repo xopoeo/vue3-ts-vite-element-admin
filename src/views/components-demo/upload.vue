@@ -18,10 +18,12 @@ const generateHTML = () => {
 
 <template>
   <div class="app-container">
-    <h4>
-      fileList:
-      <span v-html="generateHTML()" style="font-weight: 400; color: cadetblue" />
-    </h4>
-    <upload-component v-model="value" />
+    <el-card shadow="hover" header="上传组件">
+      <h4>
+        fileList:
+        <span v-html="generateHTML()" style="font-weight: 400; color: cadetblue" />
+      </h4>
+      <upload-component v-model="value" />
+    </el-card>
   </div>
 </template>
