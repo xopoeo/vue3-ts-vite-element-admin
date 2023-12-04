@@ -1,6 +1,9 @@
+import { nextTick } from "vue"
 import { ElMessage, ElMessageBox, ElLoading } from "element-plus"
 import dayJs from "dayjs"
 import printJS from "print-js"
+
+type EmptyArrayType<T = any> = T[]
 
 class utilsFun {
   constructor() {}
@@ -215,6 +218,27 @@ class utilsFun {
     str = Math.random().toString(36).substr(3)
     str += Date.now().toString(16).substr(4)
     return str
+  }
+
+  /**
+   * 图片懒加载
+   */
+  lazyImg(el: string, arr: EmptyArrayType) {
+    const io = new IntersectionObserver((res) => {
+      res.forEach((v: any) => {
+        if (v.isIntersecting) {
+          const { img, key } = v.target.dataset
+          v.target.src = img
+          v.target.onload = () => {
+            io.unobserve(v.target)
+            arr[key]["loading"] = false
+          }
+        }
+      })
+    })
+    nextTick(() => {
+      document.querySelectorAll(el).forEach((img) => io.observe(img))
+    })
   }
 }
 

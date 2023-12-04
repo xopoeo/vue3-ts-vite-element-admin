@@ -299,6 +299,14 @@ export const constantRoutes: RouteRecordRaw[] = [
         meta: {
           title: "splitPanes"
         }
+      },
+      {
+        path: "lazyImg",
+        component: () => import("@/views/components-demo/lazyImg.vue"),
+        name: "LazyImg",
+        meta: {
+          title: "lazyImg"
+        }
       }
     ]
   }
