@@ -27,5 +27,5 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["alicdn", "cropperjs", "Ture", "unocss", "xopoeo"]
+  "cSpell.words": ["alicdn", "cropperjs", "Splitpanes", "Ture", "unocss", "xopoeo"]
 }

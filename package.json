@@ -39,6 +39,7 @@
     "pinia": "2.1.7",
     "print-js": "^1.6.0",
     "screenfull": "6.0.2",
+    "splitpanes": "^3.1.5",
     "vue": "3.3.8",
     "vue-router": "4.2.5",
     "vxe-table": "4.4.1",

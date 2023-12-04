@@ -291,6 +291,14 @@ export const constantRoutes: RouteRecordRaw[] = [
         meta: {
           title: "print"
         }
+      },
+      {
+        path: "splitPanes",
+        component: () => import("@/views/components-demo/splitPanes.vue"),
+        name: "SplitPanes",
+        meta: {
+          title: "splitPanes"
+        }
       }
     ]
   }
