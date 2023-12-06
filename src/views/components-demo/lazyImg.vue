@@ -16,7 +16,7 @@ onMounted(() => {
 
 <template>
   <div class="app-container">
-    <el-card shadow="hover" header="lazyImg">
+    <el-card shadow="hover" header="图片懒加载演示（F12 切换到 Network Img下进行图片加载查看）">
       <div class="flex-warp" v-if="data.filterList.length > 0">
         <el-row :gutter="15">
           <el-col :xs="24" :sm="12" :md="8" :lg="6" :xl="4" class="mb15" v-for="(v, k) in data.filterList" :key="k">

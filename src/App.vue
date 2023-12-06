@@ -1,9 +1,15 @@
 <script lang="ts" setup>
-import { h } from "vue"
+import { h, onMounted } from "vue"
 import { useTheme } from "@/hooks/useTheme"
 import { ElNotification } from "element-plus"
 // 将 Element Plus 的语言设置为中文
 import zhCn from "element-plus/es/locale/lang/zh-cn"
+import $iconFont from "@/utils/tools/initIconFont"
+
+onMounted(() => {
+  /** 初始化图标 */
+  $iconFont.setCssCdn()
+})
 
 const { initTheme } = useTheme()
 

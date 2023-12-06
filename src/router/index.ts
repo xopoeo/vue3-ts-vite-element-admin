@@ -307,6 +307,22 @@ export const constantRoutes: RouteRecordRaw[] = [
         meta: {
           title: "lazyImg"
         }
+      },
+      {
+        path: "noticeBar",
+        component: () => import("@/views/components-demo/noticeBar.vue"),
+        name: "NoticeBar",
+        meta: {
+          title: "noticeBar"
+        }
+      },
+      {
+        path: "iconSelector",
+        component: () => import("@/views/components-demo/iconSelector.vue"),
+        name: "IconSelector",
+        meta: {
+          title: "iconSelector"
+        }
       }
     ]
   }

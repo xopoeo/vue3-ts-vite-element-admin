@@ -16,8 +16,13 @@ import "element-plus/theme-chalk/dark/css-vars.css"
 import "vxe-table/lib/style.css"
 import "vxe-table-plugin-element/dist/style.css"
 import "@/styles/index.scss"
+// other
+import $iconFont from "@/utils/tools/initIconFont"
 
 const app = createApp(App)
+
+/** 加载ele svg字体图标 */
+$iconFont.elSvg(app)
 
 /** 加载插件 */
 loadPlugins(app)
