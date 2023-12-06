@@ -323,6 +323,14 @@ export const constantRoutes: RouteRecordRaw[] = [
         meta: {
           title: "iconSelector"
         }
+      },
+      {
+        path: "countTo",
+        component: () => import("@/views/components-demo/countTo.vue"),
+        name: "CountTo",
+        meta: {
+          title: "countTo"
+        }
       }
     ]
   }
