@@ -333,6 +333,27 @@ export const constantRoutes: RouteRecordRaw[] = [
         }
       }
     ]
+  },
+  {
+    path: "/text-demo",
+    component: Layouts,
+    redirect: "/tsx-demo/index.vue",
+    name: "ComponentsDemo",
+    meta: {
+      title: "TSX 示例",
+      svgIcon: "component",
+      alwaysShow: true
+    },
+    children: [
+      {
+        path: "index",
+        component: () => import("@/views/tsx-demo/index.vue"),
+        name: "Index",
+        meta: {
+          title: "index"
+        }
+      }
+    ]
   }
 ]
 
